@@ -1,0 +1,8 @@
+<h2 class="page-header">Editar Usuario</h2>
+<form action="/users/<%= user.id %>?_method=PUT" method="POST">
+    <%- include('_form_fields') %>
+        <div class="form-row form-row-end btn-row">
+            <a class="btn btn-danger" href="/users/<%= user.id %>">Cancelar</a>
+            <button class="btn btn-primary" type="submit">Actualizar</button>
+        </div>
+</form>
